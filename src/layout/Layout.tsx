@@ -1,13 +1,17 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
+import { themeBlack } from "../assets/colors";
+import { LayoutStyled } from "../assets/styled/layout/Layout.styled";
+import Navbar from "../components/navbar/Navbar";
 
-interface ILayout{
-    children:ReactNode
+interface ILayout {
+  children: ReactNode;
 }
 
-export default function Layout(props:ILayout) {
+export default function Layout(props: ILayout) {
   return (
-    <div>
+    <LayoutStyled bgColor={"sse" ? themeBlack : "#fff"}>
+      <Navbar />
       {props.children}
-    </div>
-  )
+    </LayoutStyled>
+  );
 }
