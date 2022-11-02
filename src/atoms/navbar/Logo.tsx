@@ -1,9 +1,5 @@
-import React from 'react'
+import { LogoStyled } from "../../assets/styled/navbar/Navbar.styled";
 
 export default function Logo() {
-  return (
-    <div>
-      <h1>Logo</h1>
-    </div>
-  )
+  return <LogoStyled>S.Vilayat</LogoStyled>;
 };
