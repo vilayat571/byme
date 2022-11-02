@@ -34,7 +34,15 @@ export const LogoStyled = styled.span`
   letter-spacing: 0.8px;
 `;
 
-
-export const NavItemsLayout=styled.div`
-
+export const NavItemsLayout = styled.div`
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+    color: #a4a9bd;
+    font-size: 16px;
+  }
 `;
