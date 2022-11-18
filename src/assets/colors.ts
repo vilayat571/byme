@@ -1,1 +1,0 @@
-export const themeBlack='#1f2028';
